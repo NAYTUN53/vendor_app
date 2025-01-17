@@ -14,7 +14,7 @@ class UploadScreen extends ConsumerStatefulWidget {
   const UploadScreen({super.key});
 
   @override
-  _UploadScreenState createState() => _UploadScreenState();
+  ConsumerState<UploadScreen> createState() => _UploadScreenState();
 }
 
 class _UploadScreenState extends ConsumerState<UploadScreen> {
@@ -315,7 +315,6 @@ class _UploadScreenState extends ConsumerState<UploadScreen> {
                     selectedSubcategory = null;
                     images.clear();
                   });
-
                 });
               } else {
                 ScaffoldMessenger.of(context).showSnackBar(
